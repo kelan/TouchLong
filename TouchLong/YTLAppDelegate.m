@@ -8,10 +8,26 @@
 
 #import "YTLAppDelegate.h"
 
+#import "YTLViewController.h"
+
+
+@interface YTLAppDelegate ()
+@property (nonatomic) YTLViewController *mainVC;
+@end
+
+
 @implementation YTLAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    self.window = [UIWindow new];
+    self.window.frame = [[UIScreen mainScreen] bounds];
+
+    self.mainVC = [YTLViewController new];
+
+    self.window.rootViewController = self.mainVC;
+    [self.window makeKeyAndVisible];
+
     // Override point for customization after application launch.
     return YES;
 }

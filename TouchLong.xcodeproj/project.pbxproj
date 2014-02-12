@@ -13,8 +13,6 @@
 		76D6ADCF18ABCD0700077177 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 76D6ADCD18ABCD0700077177 /* InfoPlist.strings */; };
 		76D6ADD118ABCD0700077177 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 76D6ADD018ABCD0700077177 /* main.m */; };
 		76D6ADD518ABCD0700077177 /* YTLAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 76D6ADD418ABCD0700077177 /* YTLAppDelegate.m */; };
-		76D6ADD818ABCD0700077177 /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 76D6ADD618ABCD0700077177 /* Main_iPhone.storyboard */; };
-		76D6ADDB18ABCD0700077177 /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 76D6ADD918ABCD0700077177 /* Main_iPad.storyboard */; };
 		76D6ADDE18ABCD0700077177 /* YTLViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 76D6ADDD18ABCD0700077177 /* YTLViewController.m */; };
 		76D6ADE018ABCD0700077177 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 76D6ADDF18ABCD0700077177 /* Images.xcassets */; };
 		76D6ADE718ABCD0700077177 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 76D6ADE618ABCD0700077177 /* XCTest.framework */; };
@@ -45,8 +43,6 @@
 		76D6ADD218ABCD0700077177 /* TouchLong-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TouchLong-Prefix.pch"; sourceTree = "<group>"; };
 		76D6ADD318ABCD0700077177 /* YTLAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YTLAppDelegate.h; sourceTree = "<group>"; };
 		76D6ADD418ABCD0700077177 /* YTLAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YTLAppDelegate.m; sourceTree = "<group>"; };
-		76D6ADD718ABCD0700077177 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
-		76D6ADDA18ABCD0700077177 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
 		76D6ADDC18ABCD0700077177 /* YTLViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YTLViewController.h; sourceTree = "<group>"; };
 		76D6ADDD18ABCD0700077177 /* YTLViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YTLViewController.m; sourceTree = "<group>"; };
 		76D6ADDF18ABCD0700077177 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
@@ -116,8 +112,6 @@
 			children = (
 				76D6ADD318ABCD0700077177 /* YTLAppDelegate.h */,
 				76D6ADD418ABCD0700077177 /* YTLAppDelegate.m */,
-				76D6ADD618ABCD0700077177 /* Main_iPhone.storyboard */,
-				76D6ADD918ABCD0700077177 /* Main_iPad.storyboard */,
 				76D6ADDC18ABCD0700077177 /* YTLViewController.h */,
 				76D6ADDD18ABCD0700077177 /* YTLViewController.m */,
 				76D6ADDF18ABCD0700077177 /* Images.xcassets */,
@@ -232,9 +226,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				76D6ADDB18ABCD0700077177 /* Main_iPad.storyboard in Resources */,
 				76D6ADE018ABCD0700077177 /* Images.xcassets in Resources */,
-				76D6ADD818ABCD0700077177 /* Main_iPhone.storyboard in Resources */,
 				76D6ADCF18ABCD0700077177 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -285,22 +277,6 @@
 				76D6ADCE18ABCD0700077177 /* en */,
 			);
 			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		76D6ADD618ABCD0700077177 /* Main_iPhone.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				76D6ADD718ABCD0700077177 /* Base */,
-			);
-			name = Main_iPhone.storyboard;
-			sourceTree = "<group>";
-		};
-		76D6ADD918ABCD0700077177 /* Main_iPad.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				76D6ADDA18ABCD0700077177 /* Base */,
-			);
-			name = Main_iPad.storyboard;
 			sourceTree = "<group>";
 		};
 		76D6ADEF18ABCD0700077177 /* InfoPlist.strings */ = {
@@ -393,6 +369,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "TouchLong/TouchLong-Prefix.pch";
 				INFOPLIST_FILE = "TouchLong/TouchLong-Info.plist";
@@ -406,6 +383,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "TouchLong/TouchLong-Prefix.pch";
 				INFOPLIST_FILE = "TouchLong/TouchLong-Info.plist";

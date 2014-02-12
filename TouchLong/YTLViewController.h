@@ -6,8 +6,11 @@
 //  Copyright (c) 2014 Kelan Champagne. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+@import UIKit;
+
 
 @interface YTLViewController : UIViewController
+
+@property (nonatomic) UIWindow *window;
 
 @end
