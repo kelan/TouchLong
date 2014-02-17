@@ -7,14 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7661B6DA18B2CFD0008EFBC6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7661B6D418B2CFCF008EFBC6 /* main.m */; };
+		7661B6DB18B2CFD0008EFBC6 /* YTLAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7661B6D718B2CFCF008EFBC6 /* YTLAppDelegate.m */; };
+		7661B6DC18B2CFD0008EFBC6 /* YTLViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7661B6D918B2CFCF008EFBC6 /* YTLViewController.m */; };
+		7661B6E218B2CFD9008EFBC6 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7661B6DE18B2CFD9008EFBC6 /* InfoPlist.strings */; };
+		7661B6E318B2CFD9008EFBC6 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7661B6E018B2CFD9008EFBC6 /* Images.xcassets */; };
+		7661B6E418B2CFD9008EFBC6 /* TouchLong-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7661B6E118B2CFD9008EFBC6 /* TouchLong-Info.plist */; };
 		76D6ADC518ABCD0700077177 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 76D6ADC418ABCD0700077177 /* Foundation.framework */; };
 		76D6ADC718ABCD0700077177 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 76D6ADC618ABCD0700077177 /* CoreGraphics.framework */; };
 		76D6ADC918ABCD0700077177 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 76D6ADC818ABCD0700077177 /* UIKit.framework */; };
-		76D6ADCF18ABCD0700077177 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 76D6ADCD18ABCD0700077177 /* InfoPlist.strings */; };
-		76D6ADD118ABCD0700077177 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 76D6ADD018ABCD0700077177 /* main.m */; };
-		76D6ADD518ABCD0700077177 /* YTLAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 76D6ADD418ABCD0700077177 /* YTLAppDelegate.m */; };
-		76D6ADDE18ABCD0700077177 /* YTLViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 76D6ADDD18ABCD0700077177 /* YTLViewController.m */; };
-		76D6ADE018ABCD0700077177 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 76D6ADDF18ABCD0700077177 /* Images.xcassets */; };
 		76D6ADE718ABCD0700077177 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 76D6ADE618ABCD0700077177 /* XCTest.framework */; };
 		76D6ADE818ABCD0700077177 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 76D6ADC418ABCD0700077177 /* Foundation.framework */; };
 		76D6ADE918ABCD0700077177 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 76D6ADC818ABCD0700077177 /* UIKit.framework */; };
@@ -33,19 +34,19 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7661B6D418B2CFCF008EFBC6 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		7661B6D518B2CFCF008EFBC6 /* TouchLong-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "TouchLong-Prefix.pch"; sourceTree = "<group>"; };
+		7661B6D618B2CFCF008EFBC6 /* YTLAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YTLAppDelegate.h; sourceTree = "<group>"; };
+		7661B6D718B2CFCF008EFBC6 /* YTLAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YTLAppDelegate.m; sourceTree = "<group>"; };
+		7661B6D818B2CFCF008EFBC6 /* YTLViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YTLViewController.h; sourceTree = "<group>"; };
+		7661B6D918B2CFCF008EFBC6 /* YTLViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YTLViewController.m; sourceTree = "<group>"; };
+		7661B6DF18B2CFD9008EFBC6 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		7661B6E018B2CFD9008EFBC6 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		7661B6E118B2CFD9008EFBC6 /* TouchLong-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "TouchLong-Info.plist"; sourceTree = "<group>"; };
 		76D6ADC118ABCD0700077177 /* TouchLong.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TouchLong.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		76D6ADC418ABCD0700077177 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		76D6ADC618ABCD0700077177 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		76D6ADC818ABCD0700077177 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
-		76D6ADCC18ABCD0700077177 /* TouchLong-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TouchLong-Info.plist"; sourceTree = "<group>"; };
-		76D6ADCE18ABCD0700077177 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		76D6ADD018ABCD0700077177 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		76D6ADD218ABCD0700077177 /* TouchLong-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TouchLong-Prefix.pch"; sourceTree = "<group>"; };
-		76D6ADD318ABCD0700077177 /* YTLAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YTLAppDelegate.h; sourceTree = "<group>"; };
-		76D6ADD418ABCD0700077177 /* YTLAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YTLAppDelegate.m; sourceTree = "<group>"; };
-		76D6ADDC18ABCD0700077177 /* YTLViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YTLViewController.h; sourceTree = "<group>"; };
-		76D6ADDD18ABCD0700077177 /* YTLViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YTLViewController.m; sourceTree = "<group>"; };
-		76D6ADDF18ABCD0700077177 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		76D6ADE518ABCD0700077177 /* TouchLongTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TouchLongTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		76D6ADE618ABCD0700077177 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		76D6ADEE18ABCD0700077177 /* TouchLongTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TouchLongTests-Info.plist"; sourceTree = "<group>"; };
@@ -77,10 +78,34 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7661B6D318B2CFCF008EFBC6 /* Code */ = {
+			isa = PBXGroup;
+			children = (
+				7661B6D418B2CFCF008EFBC6 /* main.m */,
+				7661B6D518B2CFCF008EFBC6 /* TouchLong-Prefix.pch */,
+				7661B6D618B2CFCF008EFBC6 /* YTLAppDelegate.h */,
+				7661B6D718B2CFCF008EFBC6 /* YTLAppDelegate.m */,
+				7661B6D818B2CFCF008EFBC6 /* YTLViewController.h */,
+				7661B6D918B2CFCF008EFBC6 /* YTLViewController.m */,
+			);
+			path = Code;
+			sourceTree = "<group>";
+		};
+		7661B6DD18B2CFD9008EFBC6 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				7661B6DE18B2CFD9008EFBC6 /* InfoPlist.strings */,
+				7661B6E018B2CFD9008EFBC6 /* Images.xcassets */,
+				7661B6E118B2CFD9008EFBC6 /* TouchLong-Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 		76D6ADB818ABCD0600077177 = {
 			isa = PBXGroup;
 			children = (
-				76D6ADCA18ABCD0700077177 /* TouchLong */,
+				7661B6D318B2CFCF008EFBC6 /* Code */,
+				7661B6DD18B2CFD9008EFBC6 /* Resources */,
 				76D6ADEC18ABCD0700077177 /* TouchLongTests */,
 				76D6ADC318ABCD0700077177 /* Frameworks */,
 				76D6ADC218ABCD0700077177 /* Products */,
@@ -105,30 +130,6 @@
 				76D6ADE618ABCD0700077177 /* XCTest.framework */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		76D6ADCA18ABCD0700077177 /* TouchLong */ = {
-			isa = PBXGroup;
-			children = (
-				76D6ADD318ABCD0700077177 /* YTLAppDelegate.h */,
-				76D6ADD418ABCD0700077177 /* YTLAppDelegate.m */,
-				76D6ADDC18ABCD0700077177 /* YTLViewController.h */,
-				76D6ADDD18ABCD0700077177 /* YTLViewController.m */,
-				76D6ADDF18ABCD0700077177 /* Images.xcassets */,
-				76D6ADCB18ABCD0700077177 /* Supporting Files */,
-			);
-			path = TouchLong;
-			sourceTree = "<group>";
-		};
-		76D6ADCB18ABCD0700077177 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				76D6ADCC18ABCD0700077177 /* TouchLong-Info.plist */,
-				76D6ADCD18ABCD0700077177 /* InfoPlist.strings */,
-				76D6ADD018ABCD0700077177 /* main.m */,
-				76D6ADD218ABCD0700077177 /* TouchLong-Prefix.pch */,
-			);
-			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 		76D6ADEC18ABCD0700077177 /* TouchLongTests */ = {
@@ -226,8 +227,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				76D6ADE018ABCD0700077177 /* Images.xcassets in Resources */,
-				76D6ADCF18ABCD0700077177 /* InfoPlist.strings in Resources */,
+				7661B6E418B2CFD9008EFBC6 /* TouchLong-Info.plist in Resources */,
+				7661B6E318B2CFD9008EFBC6 /* Images.xcassets in Resources */,
+				7661B6E218B2CFD9008EFBC6 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -246,9 +248,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				76D6ADD518ABCD0700077177 /* YTLAppDelegate.m in Sources */,
-				76D6ADD118ABCD0700077177 /* main.m in Sources */,
-				76D6ADDE18ABCD0700077177 /* YTLViewController.m in Sources */,
+				7661B6DC18B2CFD0008EFBC6 /* YTLViewController.m in Sources */,
+				7661B6DA18B2CFD0008EFBC6 /* main.m in Sources */,
+				7661B6DB18B2CFD0008EFBC6 /* YTLAppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -271,10 +273,10 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		76D6ADCD18ABCD0700077177 /* InfoPlist.strings */ = {
+		7661B6DE18B2CFD9008EFBC6 /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
-				76D6ADCE18ABCD0700077177 /* en */,
+				7661B6DF18B2CFD9008EFBC6 /* en */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
@@ -371,8 +373,8 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "TouchLong/TouchLong-Prefix.pch";
-				INFOPLIST_FILE = "TouchLong/TouchLong-Info.plist";
+				GCC_PREFIX_HEADER = "Code/TouchLong-Prefix.pch";
+				INFOPLIST_FILE = "Resources/TouchLong-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -385,8 +387,8 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "TouchLong/TouchLong-Prefix.pch";
-				INFOPLIST_FILE = "TouchLong/TouchLong-Info.plist";
+				GCC_PREFIX_HEADER = "Code/TouchLong-Prefix.pch";
+				INFOPLIST_FILE = "Resources/TouchLong-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -453,6 +455,7 @@
 				76D6ADF818ABCD0700077177 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		76D6ADF918ABCD0700077177 /* Build configuration list for PBXNativeTarget "TouchLongTests" */ = {
 			isa = XCConfigurationList;
@@ -461,6 +464,7 @@
 				76D6ADFB18ABCD0700077177 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
