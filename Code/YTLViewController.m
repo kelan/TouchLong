@@ -26,7 +26,6 @@ CGFloat YTLPointLength(CGPoint p);
     UIView *_dotView;
     UILabel *_label;
 
-    UIPanGestureRecognizer *_panGR;
     CGPoint _currentTouchLocationInView; // in self.view
     NSDate *_startTime;
 
@@ -56,22 +55,10 @@ CGFloat YTLPointLength(CGPoint p);
     _dotView.layer.cornerRadius = _dotView.frame.size.height / 2.0;
     [self.view addSubview:_dotView];
 
-    _panGR = [[UIPanGestureRecognizer alloc]
-              initWithTarget:self
-              action:@selector(handlePanGR:)];
-    [self.view addGestureRecognizer:_panGR];
-//    _dotView.userInteractionEnabled = YES;
-//    self.view.userInteractionEnabled = YES;
-
-    UITapGestureRecognizer *tapGR = [[UITapGestureRecognizer alloc]
-                                     initWithTarget:self
-                                     action:@selector(handlePanGR:)];
-    [self.view addGestureRecognizer:tapGR];
-
     _label = [UILabel new];
     _label.frame = CGRectMake(10.0, 20.0, s.width - 20.0, 40.0);
     _label.textColor = [UIColor whiteColor];
-    _label.text = @"Touch the screen to begin.";
+    _label.text = @"Touch and hold to begin.";
     _label.textAlignment = NSTextAlignmentCenter;
     [self.view addSubview:_label];
 
@@ -87,27 +74,31 @@ CGFloat YTLPointLength(CGPoint p);
 }
 
 
-#pragma mark - Gesture Recognizers
+#pragma mark - Touch handling
 
-- (void) handlePanGR:(UIPanGestureRecognizer *)gr
+- (void) touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event
 {
-    if (gr == _panGR) {
-        if (gr.state == UIGestureRecognizerStateBegan) {
-            _currentTouchLocationInView = [gr locationInView:self.view];
-            [self startGame];
-        }
-        else if (_panGR.state == UIGestureRecognizerStateChanged) {
-            _currentTouchLocationInView = [gr locationInView:self.view];
-        }
-        else if (_panGR.state == UIGestureRecognizerStateCancelled) {
-            [self endGameFromCollision:YES];
-        }
-        else if (_panGR.state == UIGestureRecognizerStateFailed ||
-                 _panGR.state == UIGestureRecognizerStateEnded) {
-            [self endGameFromCollision:NO];
-        }
-    }
+    UITouch *touch = [touches anyObject];
+    _currentTouchLocationInView = [touch locationInView:self.view];
+    [self startGame];
 }
+
+- (void) touchesMoved:(NSSet *)touches withEvent:(UIEvent *)event
+{
+    UITouch *touch = [touches anyObject];
+    _currentTouchLocationInView = [touch locationInView:self.view];
+}
+
+- (void) touchesEnded:(NSSet *)touches withEvent:(UIEvent *)event
+{
+    [self endGameFromCollision:NO];
+}
+
+- (void) touchesCancelled:(NSSet *)touches withEvent:(UIEvent *)event
+{
+    [self endGameFromCollision:NO];
+}
+
 
 #pragma mark - Game
 
@@ -160,9 +151,7 @@ CGFloat YTLPointLength(CGPoint p);
 
     // Check if the dot is too close to the finger
     if (YTLPointLength(delta) < 40.0) {
-        // disabling a GR cancles it if it's in progress
-        _panGR.enabled = NO;
-        _panGR.enabled = YES;
+        [self endGameFromCollision:YES];
         return;
     }
 
