@@ -9,6 +9,8 @@ long can it be?
 Touch the screen, and don't let go for as long as you can.  To make it a little
 trickier, you have to avoid the big dot.
 
+![demo](demo.gif)
+
 
 ## Notes
 
